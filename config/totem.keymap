@@ -22,12 +22,16 @@
             bindings = <&to 4>;
             key-positions = <16 17>;
             layers = <0>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <100>;
         };
 
         turntobaselayer {
             bindings = <&to 0>;
             key-positions = <17 18>;
             layers = <4>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <100>;
         };
     };
 
