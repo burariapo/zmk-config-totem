@@ -57,6 +57,14 @@
             require-prior-idle-ms = <100>;
             layers = <0 1 2>;
         };
+
+        alttab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <0 1>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <100>;
+            layers = <0 1 2>;
+        };
     };
 
     keymap {
