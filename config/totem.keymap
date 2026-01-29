@@ -20,7 +20,7 @@
         compatible = "zmk,combos";
 
         turntoioaeu {
-            bindings = <&to 4>;
+            bindings = <&to 3>;
             key-positions = <26 28>;
             layers = <0 4 4>;
             timeout-ms = <60>;
