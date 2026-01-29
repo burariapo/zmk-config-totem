@@ -22,7 +22,7 @@
         turntoioaeu {
             bindings = <&to 3>;
             key-positions = <26 28>;
-            layers = <0 4 4>;
+            layers = <0 3 4>;
             timeout-ms = <60>;
             require-prior-idle-ms = <100>;
         };
@@ -30,7 +30,7 @@
         turntobaselayer {
             bindings = <&to 0>;
             key-positions = <26 27>;
-            layers = <4 0 4>;
+            layers = <0 3>;
             timeout-ms = <60>;
             require-prior-idle-ms = <100>;
         };
@@ -40,7 +40,7 @@
             key-positions = <15 16>;
             timeout-ms = <60>;
             require-prior-idle-ms = <100>;
-            layers = <0 4>;
+            layers = <0 4 3>;
         };
 
         altshift {
@@ -48,7 +48,7 @@
             key-positions = <16 17>;
             timeout-ms = <60>;
             require-prior-idle-ms = <100>;
-            layers = <0 4>;
+            layers = <0 4 3>;
         };
 
         turntoqwertynav {
@@ -56,7 +56,7 @@
             key-positions = <26 29>;
             timeout-ms = <60>;
             require-prior-idle-ms = <100>;
-            layers = <0 4 4>;
+            layers = <0 3 4>;
         };
     };
 
