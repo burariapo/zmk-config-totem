@@ -122,7 +122,7 @@
         compatible = "zmk,conditional-layers";
 
         device {
-            if-layers = <3 1>;
+            if-layers = <1 2>;
             then-layer = <5>;
         };
     };
