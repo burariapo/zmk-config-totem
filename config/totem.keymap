@@ -13,7 +13,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -83,16 +82,16 @@
 
         qwertynav {
             bindings = <
-           &kp Q           &kp UP_ARROW    &kp E            &kp R   &kp T    &kp Y   &kp U   &kp I      &kp O    &kp P
-           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F   &kp G    &kp H   &kp J   &kp K      &kp L    &kp SEMI
-&kp LCTRL  &kp Z           &kp X           &kp C            &kp V   &kp B    &kp N   &kp M   &kp COMMA  &kp DOT  &kp APOS  &kp ENTER
-                                           &mo 4            &trans  &mo 3    &trans  &trans  &trans
+           &kp Q  &kp W           &kp UP_ARROW    &kp R            &kp T    &kp Y   &kp U   &kp I      &kp O    &kp P
+           &kp A  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp G    &kp H   &kp J   &kp K      &kp L    &kp SEMI
+&kp LCTRL  &kp Z  &kp X           &kp C           &kp V            &kp B    &kp N   &kp M   &kp COMMA  &kp DOT  &kp APOS  &kp ENTER
+                                  &mo 4           &trans           &mo 3    &trans  &trans  &trans
             >;
         };
 
         num_func {
             bindings = <
-              &kp ESC  &kp N1  &kp N2  &kp N3  &kp MINUS    &kp LEFT_BRACKET   &kp F1  &kp F2  &kp F3  &kp F5
+              &kp ESC  &kp N1  &kp N2  &kp N3  &kp MINUS    &kp LEFT_BRACKET   &kp F1  &kp F2  &kp F3  &none
               &kp N0   &kp N4  &kp N5  &kp N6  &kp EQUAL    &kp RIGHT_BRACKET  &kp F4  &kp F5  &kp F6  &kp BACKSLASH
 &kp LEFT_GUI  &kp TAB  &kp N7  &kp N8  &kp N9  &kp SLASH    &kp GRAVE          &kp F7  &kp F8  &kp F9  &kp CAPS       &none
                                &trans  &trans  &trans       &trans             &trans  &trans
@@ -101,10 +100,10 @@
 
         nav_mouse {
             bindings = <
-       &none  &none     &kp UP    &kp DELETE  &kp HOME    &mkp MB2  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none
-       &none  &kp LEFT  &kp DOWN  &kp RIGHT   &kp END     &mkp MB1  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&none  &none  &none     &none     &none       &none       &none     &none           &none           &none            &none  &none
-                        &trans    &trans      &trans      &trans    &trans          &trans
+       &none  &none     &kp UP    &kp DELETE  &kp HOME    &none   &none   &none   &none  &none
+       &none  &kp LEFT  &kp DOWN  &kp RIGHT   &kp END     &none   &none   &none   &none  &none
+&none  &none  &none     &none     &none       &none       &none   &none   &none   &none  &none  &none
+                        &trans    &trans      &trans      &trans  &trans  &trans
             >;
         };
 
