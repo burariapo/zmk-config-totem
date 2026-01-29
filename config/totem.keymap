@@ -30,7 +30,7 @@
         turntobaselayer {
             bindings = <&to 0>;
             key-positions = <26 27>;
-            layers = <0 3>;
+            layers = <0 3 4>;
             timeout-ms = <60>;
             require-prior-idle-ms = <100>;
         };
