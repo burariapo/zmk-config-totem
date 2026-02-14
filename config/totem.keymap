@@ -68,7 +68,7 @@
         };
 
         shifttab {
-            bindings = <&kp LS(TAB)>;
+            bindings = <&kp LS(CAPS)>;
             key-positions = <15 17>;
             timeout-ms = <60>;
             require-prior-idle-ms = <100>;
