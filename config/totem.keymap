@@ -94,10 +94,10 @@
 
         base {
             bindings = <
-           &holdtap LEFT_GUI Q  &kp W  &kp E  &kp R      &kp T    &kp Y         &kp U          &kp I            &kp O    &kp P
-           &kp A                &kp S  &kp D  &kp F      &kp G    &kp H         &kp J          &kp K            &kp L    &kp SEMI
-&kp LCTRL  &kp Z                &kp X  &kp C  &kp V      &kp B    &kp N         &kp M          &kp COMMA        &kp DOT  &kp APOS  &kp ENTER
-                                       &mo 4  &kp SPACE  &mo 3    &kp LEFT_ALT  &kp BACKSPACE  &kp RIGHT_SHIFT
+           &holdtap LEFT_GUI Q  &kp W  &kp E  &kp R      &holdtap ENTER T    &kp Y         &kp U          &kp I            &kp O    &kp P
+           &kp A                &kp S  &kp D  &kp F      &kp G               &kp H         &kp J          &kp K            &kp L    &kp SEMI
+&kp LCTRL  &kp Z                &kp X  &kp C  &kp V      &kp B               &kp N         &kp M          &kp COMMA        &kp DOT  &kp APOS  &kp ENTER
+                                       &mo 4  &kp SPACE  &mo 3               &kp LEFT_ALT  &kp BACKSPACE  &kp RIGHT_SHIFT
             >;
         };
 
@@ -130,10 +130,10 @@
 
         nav_mouse {
             bindings = <
-       &none  &none     &kp UP    &kp DELETE  &kp HOME    &mkp RCLK  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none
-       &none  &kp LEFT  &kp DOWN  &kp RIGHT   &kp END     &mkp LCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&none  &none  &none     &none     &none       &none       &none      &none           &none           &none            &none  &none
-                        &trans    &trans      &trans      &trans     &trans          &trans
+       &none  &none     &kp UP    &kp DELETE  &kp HOME     &mkp RCLK  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none
+       &none  &kp LEFT  &kp DOWN  &kp RIGHT   &kp END      &mkp LCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+&none  &none  &none     &none     &none       &kp ENTER    &none      &none           &none           &none            &none  &none
+                        &trans    &trans      &trans       &trans     &trans          &trans
             >;
         };
 
