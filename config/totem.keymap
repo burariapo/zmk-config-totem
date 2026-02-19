@@ -90,10 +90,10 @@
 
         ioaeulayer {
             bindings = <
-           &kp MINUS  &kp COMMA  &kp Y  &kp W   &kp Q    &kp X   &kp M   &kp D   &kp K  &kp V
-           &kp I      &kp O      &kp A  &kp E   &kp U    &kp L   &kp N   &kp T   &kp S  &kp R
-&kp LCTRL  &kp APOS   &kp DOT    &kp C  &kp G   &kp J    &kp Z   &kp H   &kp F   &kp P  &kp B  &kp ENTER
-                                 &mo 4  &trans  &mo 3    &trans  &trans  &trans
+           &kp MINUS  &kp COMMA  &kp C  &kp W   &kp Z    &kp Y  &kp M   &kp D   &kp K  &kp B
+           &kp I      &kp O      &kp A  &kp E   &kp U    &kp L  &kp N   &kp T   &kp S  &kp R
+&kp LCTRL  &kp APOS   &kp DOT    &kp Q  &kp G   &kp J    &kp V  &kp H   &kp F   &kp P  &kp X  &kp ENTER
+                                 &mo 4  &trans  &mo 3    &kp Y  &trans  &trans
             >;
         };
 
