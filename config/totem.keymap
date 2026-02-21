@@ -78,6 +78,17 @@
         engandtoioaeu {
             bindings = <&EngAndToioaeulayer>;
             key-positions = <16 18>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <100>;
+            layers = <0 1>;
+        };
+
+        enganetoobase {
+            bindings = <&EngAndTobaselayer>;
+            key-positions = <16 19>;
+            layers = <0 1>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <100>;
         };
     };
 
@@ -88,6 +99,14 @@
             bindings = <&kp RIGHT_ALT &to 1>;
             label = "ENGANDTOIOAEULAYER";
             tap-ms = <20>;
+        };
+
+        EngAndTobaselayer: EngAndTobaselayer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_ALT &to 0>;
+            label = "ENGANDTOBASELAYER";
+            wait-ms = <20>;
         };
     };
 
