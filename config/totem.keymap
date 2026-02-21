@@ -74,6 +74,21 @@
             require-prior-idle-ms = <100>;
             layers = <0 1 2>;
         };
+
+        engandtoioaeu {
+            bindings = <&EngAndToioaeulayer>;
+            key-positions = <16 18>;
+        };
+    };
+
+    macros {
+        EngAndToioaeulayer: EngAndToioaeulayer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_ALT &to 1>;
+            label = "ENGANDTOIOAEULAYER";
+            tap-ms = <20>;
+        };
     };
 
     keymap {
