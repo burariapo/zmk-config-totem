@@ -90,6 +90,14 @@
             timeout-ms = <60>;
             require-prior-idle-ms = <100>;
         };
+
+        leftalt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <12 13>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <100>;
+            layers = <0 1>;
+        };
     };
 
     macros {
