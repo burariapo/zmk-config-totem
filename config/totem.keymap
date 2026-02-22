@@ -19,15 +19,15 @@
     combos {
         compatible = "zmk,combos";
 
-        turntobaselayer {
+        tobaselayer {
             bindings = <&to 0>;
             key-positions = <26 27>;
             timeout-ms = <60>;
             require-prior-idle-ms = <100>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3>;
         };
 
-        turntoioooaeu {
+        toioaeu {
             bindings = <&to 1>;
             key-positions = <26 28>;
             timeout-ms = <60>;
@@ -35,7 +35,7 @@
             layers = <0 1 2>;
         };
 
-        turntooqwertynav {
+        tooqwertynav {
             bindings = <&to 2>;
             key-positions = <26 29>;
             timeout-ms = <60>;
@@ -48,7 +48,7 @@
             key-positions = <16 17>;
             timeout-ms = <60>;
             require-prior-idle-ms = <100>;
-            layers = <0 1>;
+            layers = <0 1 3>;
         };
 
         altshift {
@@ -72,7 +72,7 @@
             key-positions = <1 0>;
             timeout-ms = <60>;
             require-prior-idle-ms = <100>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3>;
         };
 
         engandtoioaeu {
@@ -97,6 +97,14 @@
             timeout-ms = <60>;
             require-prior-idle-ms = <100>;
             layers = <0 1>;
+        };
+
+        tolayergame {
+            bindings = <&to 3>;
+            key-positions = <26 30>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
         };
     };
 
@@ -144,7 +152,7 @@
            &kp Q  &kp W      &kp E  &kp R      &kp T    &kp Y         &kp U          &kp I           &kp O    &kp P
            &kp A  &tapdance  &kp D  &kp F      &kp G    &kp H         &kp J          &kp K           &kp L    &kp SEMI
 &kp LCTRL  &kp Z  &kp X      &kp C  &kp V      &kp B    &kp N         &kp M          &kp COMMA       &kp DOT  &kp APOS  &kp ENTER
-                             &mo 4  &kp SPACE  &mo 3    &kp LEFT_ALT  &kp BACKSPACE  &kp LEFT_SHIFT
+                             &mo 5  &kp SPACE  &mo 4    &kp LEFT_ALT  &kp BACKSPACE  &kp LEFT_SHIFT
             >;
         };
 
@@ -153,7 +161,7 @@
            &kp MINUS  &kp COMMA  &kp C  &kp W   &kp Q    &kp Y  &kp M   &kp D   &kp K  &kp B
            &kp I      &kp O      &kp A  &kp E   &kp Z    &kp L  &kp N   &kp T   &kp S  &kp R
 &kp LCTRL  &kp APOS   &kp DOT    &kp G  &kp U   &kp J    &kp V  &kp H   &kp F   &kp P  &kp X  &kp ENTER
-                                 &mo 4  &trans  &mo 3    &kp Y  &trans  &trans
+                                 &mo 5  &trans  &mo 4    &kp Y  &trans  &trans
             >;
         };
 
@@ -162,7 +170,16 @@
            &kp Q  &kp W           &kp UP_ARROW    &kp R            &kp T    &kp Y   &kp U      &kp I      &kp O    &kp P
            &kp A  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp G    &kp H   &kp J      &kp K      &kp L    &kp SEMI
 &kp LCTRL  &kp Z  &kp X           &kp C           &kp V            &kp B    &kp N   &kp M      &kp COMMA  &kp DOT  &kp APOS  &kp ENTER
-                                  &mo 4           &trans           &mo 3    &trans  &kp SPACE  &trans
+                                  &mo 5           &trans           &mo 4    &trans  &kp SPACE  &trans
+            >;
+        };
+
+        gameqwerty {
+            bindings = <
+           &kp Q  &kp W  &kp E  &kp R      &kp T    &kp Y         &kp U          &kp I           &kp O    &kp P
+           &kp A  &kp S  &kp D  &kp F      &kp G    &kp H         &kp J          &kp K           &kp L    &kp SEMI
+&kp LCTRL  &kp Z  &kp X  &kp C  &kp V      &kp B    &kp N         &kp M          &kp COMMA       &kp DOT  &kp APOS  &kp ENTER
+                         &mo 5  &kp SPACE  &mo 4    &kp LEFT_ALT  &kp BACKSPACE  &kp LEFT_SHIFT
             >;
         };
 
@@ -198,8 +215,8 @@
         compatible = "zmk,conditional-layers";
 
         device {
-            if-layers = <3 4>;
-            then-layer = <5>;
+            if-layers = <4 5>;
+            then-layer = <6>;
         };
     };
 };
