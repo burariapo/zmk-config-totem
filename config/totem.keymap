@@ -186,8 +186,8 @@
         numandfunc {
             bindings = <
           &kp ESC  &kp N1  &kp N2  &kp N3  &kp MINUS    &kp LBKT   &kp F1  &kp F2  &kp F3  &kp N9
-          &kp N0   &kp N4  &kp N5  &kp N6  &kp EQUAL    &kp RBKT   &kp F4  &kp F5  &kp F6  &kp BSLH
-&kp LGUI  &kp TAB  &kp N7  &kp N8  &kp N9  &kp FSLH     &kp GRAVE  &kp F7  &kp F8  &kp F9  &kp CAPS  &kp SEMICOLON
+          &kp N0   &kp N4  &kp N5  &kp N6  &kp EQUAL    &kp RBKT   &kp F4  &kp F5  &kp F6  &kp SEMICOLON
+&kp LGUI  &kp TAB  &kp N7  &kp N8  &kp N9  &kp FSLH     &kp GRAVE  &kp F7  &kp F8  &kp F9  &kp CAPS       &kp BACKSLASH
                            &trans  &trans  &trans       &trans     &trans  &trans
             >;
         };
