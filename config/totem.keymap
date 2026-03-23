@@ -124,6 +124,30 @@
             label = "ENGANDTOBASELAYER";
             wait-ms = <20>;
         };
+
+        bracket: bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "BRACKET";
+            wait-ms = <20>;
+        };
+
+        parenthesis: parenthesis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "PARENTHESIS";
+            wait-ms = <20>;
+        };
+
+        brace: brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            label = "BRACE";
+            wait-ms = <20>;
+        };
     };
 
     behaviors {
@@ -185,10 +209,10 @@
 
         numandfunc {
             bindings = <
-          &kp ESC  &kp N1  &kp N2  &kp N3  &kp MINUS    &kp LBKT   &kp F1  &kp F2  &kp F3  &kp LEFT_PARENTHESIS
-          &kp N0   &kp N4  &kp N5  &kp N6  &kp EQUAL    &kp RBKT   &kp F4  &kp F5  &kp F6  &kp SEMICOLON
-&kp LGUI  &kp TAB  &kp N7  &kp N8  &kp N9  &kp FSLH     &kp GRAVE  &kp F7  &kp F8  &kp F9  &kp CAPS              &kp BACKSLASH
-                           &trans  &trans  &trans       &trans     &trans  &trans
+          &kp ESC  &kp N1  &kp N2  &kp N3  &kp MINUS    &bracket      &kp F1  &kp F2  &kp F3  &brace
+          &kp N0   &kp N4  &kp N5  &kp N6  &kp EQUAL    &parenthesis  &kp F4  &kp F5  &kp F6  &kp SEMICOLON
+&kp LGUI  &kp TAB  &kp N7  &kp N8  &kp N9  &kp FSLH     &kp GRAVE     &kp F7  &kp F8  &kp F9  &kp CAPS       &kp BACKSLASH
+                           &trans  &trans  &trans       &trans        &trans  &trans
             >;
         };
 
