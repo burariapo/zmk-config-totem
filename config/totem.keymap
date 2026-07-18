@@ -160,7 +160,7 @@
         new_macro: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_SHIFT>, <&macro_press>, <&kp X>;
+            bindings = <&macro_tap>, <&kp LEFT_SHIFT>, <&macro_tap>, <&kp X>;
 
             label = "NEW_MACRO";
             wait-ms = <2>;
