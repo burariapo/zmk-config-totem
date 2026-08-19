@@ -160,11 +160,24 @@
         new_macro: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LS(X)>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp V>,
+                <&macro_wait_time 310>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
 
             label = "NEW_MACRO";
-            wait-ms = <2>;
-            tap-ms = <300>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
+
+        duckingslide: duckingslide {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp L>;
+            label = "DUCKINGSLIDE";
+            wait-ms = <0>;
         };
     };
 
@@ -209,9 +222,9 @@
 
         qwertynav {
             bindings = <
-           &kp Q  &kp W           &kp UP_ARROW    &kp R            &kp T    &kp Y   &kp U       &kp I      &kp O    &kp P
-           &kp A  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp G    &kp H   &kp J       &kp K      &kp L    &kp SEMI
-&kp LCTRL  &kp Z  &kp X           &kp C           &kp V            &kp B    &kp N   &new_macro  &kp COMMA  &kp DOT  &kp APOS  &kp ENTER
+           &kp Q  &kp W           &kp UP_ARROW    &kp R            &kp T    &kp Y   &kp U       &kp I          &kp O    &kp P
+           &kp A  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp G    &kp H   &kp J       &kp K          &kp L    &kp SEMI
+&kp LCTRL  &kp Z  &kp X           &kp C           &kp V            &kp B    &kp N   &new_macro  &duckingslide  &kp DOT  &kp APOS  &kp ENTER
                                   &mo 5           &trans           &mo 4    &trans  &kp SPACE   &trans
             >;
         };
