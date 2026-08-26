@@ -161,11 +161,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&macro_tap>,
+                <&macro_tap_time 70000>,
                 <&kp P>,
-                <&macro_wait_time 70000>,
-                <&macro_release>,
-                <&kp P>,
-                <&macro_wait_time 10000>;
+                <&macro_tap_time 15000>,
+                <&kp P>;
 
             label = "NEW_MACRO";
         };
