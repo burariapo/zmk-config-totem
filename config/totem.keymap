@@ -162,9 +162,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&macro_tap_time 70000>,
+                <&macro_tap_time 55000>,
                 <&kp P>,
-                <&macro_tap_time 15000>,
+                <&macro_tap_time 55000>,
                 <&kp P>;
 
             label = "NEW_MACRO";
