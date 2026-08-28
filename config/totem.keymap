@@ -163,9 +163,9 @@
             bindings =
                 <&macro_tap>,
                 <&macro_tap_time 50000>,
-                <&kp P>,
+                <&kp B>,
                 <&macro_tap_time 50000>,
-                <&kp P>;
+                <&kp B>;
 
             label = "NEW_MACRO";
         };
