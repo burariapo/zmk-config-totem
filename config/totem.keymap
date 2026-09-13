@@ -194,10 +194,10 @@
 
         base {
             bindings = <
-           &kp Q  &kp W      &kp E  &kp R      &kp T    &kp Y          &kp U          &kp I           &kp O    &kp P
-           &kp A  &tapdance  &kp D  &kp F      &kp G    &kp H          &kp J          &kp K           &kp L    &kp SEMI
-&kp LCTRL  &kp Z  &kp X      &kp C  &kp V      &kp B    &kp N          &kp M          &kp COMMA       &kp DOT  &kp APOS  &kp ENTER
-                             &mo 5  &kp SPACE  &mo 4    &kp BACKSPACE  &kp BACKSPACE  &kp LEFT_SHIFT
+           &kp Q  &kp W      &kp E  &kp R      &kp T    &kp Y         &kp U          &kp I           &kp O    &kp P
+           &kp A  &tapdance  &kp D  &kp F      &kp G    &kp H         &kp J          &kp K           &kp L    &kp SEMI
+&kp LCTRL  &kp Z  &kp X      &kp C  &kp V      &kp B    &kp N         &kp M          &kp COMMA       &kp DOT  &kp APOS  &kp ENTER
+                             &mo 5  &kp SPACE  &mo 4    &kp LEFT_ALT  &kp BACKSPACE  &kp LEFT_SHIFT
             >;
         };
 
@@ -231,17 +231,17 @@
         numandfunc {
             bindings = <
               &kp ESC  &kp N1  &kp N2  &kp N3  &kp MINUS    &bracket      &kp F1  &kp F2  &kp F3  &brace
-              &kp N0   &kp N4  &kp N5  &kp N6  &kp EQUAL    &parenthesis  &kp F4  &kp F5  &kp F6  &kp BSLH
-&kp LEFT_ALT  &kp TAB  &kp N7  &kp N8  &kp N9  &kp FSLH     &kp GRAVE     &kp F7  &kp F8  &kp F9  &kp CAPS  &kp BACKSLASH
+              &kp N0   &kp N4  &kp N5  &kp N6  &kp EQUAL    &parenthesis  &kp F4  &kp F5  &kp F6  &kp LEFT_ALT
+&kp LEFT_ALT  &kp TAB  &kp N7  &kp N8  &kp N9  &kp FSLH     &kp GRAVE     &kp F7  &kp F8  &kp F9  &kp CAPS      &kp BACKSLASH
                                &trans  &trans  &trans       &trans        &trans  &trans
             >;
         };
 
         nav {
             bindings = <
-                &none         &none           &kp UP_ARROW    &kp DELETE       &kp HOME    &mkp RCLK  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none
+                &kp PAGE_UP   &kp PAGE_DOWN   &kp UP_ARROW    &kp DELETE       &kp HOME    &mkp RCLK  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none
                 &none         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END     &mkp LCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&kp LEFT_SHIFT  &kp LEFT_GUI  &none           &kp BACKSPACE   &kp ENTER        &none       &none      &none           &none           &none            &none  &none
+&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_ALT    &kp BACKSPACE   &kp ENTER        &kp INS     &none      &none           &none           &none            &none  &none
                                               &trans          &trans           &trans      &trans     &trans          &trans
             >;
         };
